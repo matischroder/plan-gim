@@ -32,7 +32,7 @@ class Mas extends React.Component {
           aria-label="Left Align"
           onClick={this.handleClick}
         >
-          +
+          <i class="fa fa-plus"></i>
         </button>
 
         {this.state.ejercicios.map(ejercicio => (
