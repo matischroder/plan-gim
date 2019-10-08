@@ -57,8 +57,18 @@ class Ejercicio extends React.Component {
           placeholder="Ejercicio"
           type="text"
         />
-        <input className="form-control" placeholder="Series" type="number" />
-        <input className="form-control" placeholder="Repes" type="number" />
+        <input
+          className="form-control"
+          placeholder="Series"
+          type="text"
+          pattern="\d*"
+        />
+        <input
+          className="form-control"
+          placeholder="Repes"
+          type="text"
+          pattern="\d*"
+        />
         <input className="form-control" placeholder="Kg" type="number" />
         <button
           onClick={() => {
