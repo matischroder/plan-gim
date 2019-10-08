@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./gim.jpeg";
 
 class Mas extends React.Component {
   constructor(props) {
