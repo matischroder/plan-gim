@@ -69,12 +69,7 @@ class Ejercicio extends React.Component {
           type="text"
           pattern="\d*"
         />
-        <input
-          className="form-control"
-          placeholder="Kg"
-          type="text"
-          pattern="\d*"
-        />
+        <input className="form-control" placeholder="Kg" type="number" />
         <button
           onClick={() => {
             if (
