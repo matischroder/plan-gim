@@ -33,8 +33,19 @@ class Mas extends React.Component {
           aria-label="Left Align"
           onClick={this.handleClick}
         >
-          <i class="fa fa-plus"></i>
+          <i className="fa fa-plus"></i>
         </button>
+        <div className="input-group mb-3">
+          <label style={{ width: "40%" }} className="form-control">
+            Ejercicio
+          </label>
+          <label className="form-control">Series</label>
+          <label className="form-control">Repes</label>
+          <label className="form-control">Kg</label>
+          <button className="btn btn-dark">
+            <i className="fa fa-line-chart"></i>
+          </button>
+        </div>
 
         {this.state.ejercicios.map(ejercicio => (
           <Ejercicio
@@ -53,7 +64,7 @@ class Ejercicio extends React.Component {
     return (
       <div className="input-group mb-3">
         <input
-          id="ejer"
+          style={{ width: "40%" }}
           className="form-control"
           placeholder="Ejercicio"
           type="text"
